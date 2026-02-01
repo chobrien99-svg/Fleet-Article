@@ -213,7 +213,7 @@
     <circle cx="0" cy="0" r="22" fill="url(#goldGradient)" filter="url(#glow)"/>
     <circle cx="0" cy="0" r="10" fill="white"/>
     <!-- Card - larger and highlighted -->
-    <rect x="-110" y="-255" width="220" height="130" rx="15" fill="rgba(247,151,30,0.25)" stroke="url(#goldGradient)" stroke-width="3" filter="url(#shadow)"/>
+    <rect x="-110" y="-252" width="220" height="130" rx="15" fill="rgba(247,151,30,0.25)" stroke="url(#goldGradient)" stroke-width="3" filter="url(#shadow)"/>
     <text x="0" y="-240" font-family="Arial, sans-serif" font-size="14" fill="#ffd200" text-anchor="middle" font-weight="bold">FEBRUARY 2026</text>
     <text x="0" y="-210" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">€100M</text>
     <text x="0" y="-185" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">VALUATION</text>
