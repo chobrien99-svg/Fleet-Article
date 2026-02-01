@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <!-- Gradient backgrounds -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f7971e"/>
+      <stop offset="100%" style="stop-color:#ffd200"/>
+    </linearGradient>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e"/>
+      <stop offset="100%" style="stop-color:#38ef7d"/>
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ee0979"/>
+      <stop offset="100%" style="stop-color:#ff6a00"/>
+    </linearGradient>
+    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00c6fb"/>
+      <stop offset="100%" style="stop-color:#005bea"/>
+    </linearGradient>
+    <linearGradient id="timelineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="25%" style="stop-color:#11998e"/>
+      <stop offset="50%" style="stop-color:#ffd200"/>
+      <stop offset="75%" style="stop-color:#ee0979"/>
+      <stop offset="100%" style="stop-color:#00c6fb"/>
+    </linearGradient>
+    <!-- Glow filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="url(#bgGradient)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="200" fill="#667eea" opacity="0.05"/>
+  <circle cx="1300" cy="800" r="250" fill="#38ef7d" opacity="0.05"/>
+  <circle cx="700" cy="450" r="300" fill="#ffd200" opacity="0.03"/>
+
+  <!-- Header -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glow)">FLEET</text>
+  <text x="700" y="85" font-family="Arial, sans-serif" font-size="18" fill="#a0a0c0" text-anchor="middle">The Bootstrapped Journey to €100M Valuation</text>
+
+  <!-- Founding story highlight -->
+  <rect x="500" y="100" width="400" height="35" rx="17" fill="rgba(247,151,30,0.2)" stroke="url(#goldGradient)" stroke-width="1"/>
+  <text x="700" y="123" font-family="Arial, sans-serif" font-size="14" fill="#ffd200" text-anchor="middle" font-weight="bold">€2,500 × 2 founders = €5,000 initial investment</text>
+
+  <!-- Main Timeline Line -->
+  <rect x="100" y="440" width="1200" height="8" rx="4" fill="url(#timelineGradient)" filter="url(#softGlow)"/>
+
+  <!-- Year markers on timeline -->
+  <g font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#a0a0c0">
+    <text x="140" y="480" text-anchor="middle">2019</text>
+    <text x="340" y="480" text-anchor="middle">2020</text>
+    <text x="540" y="480" text-anchor="middle">2022</text>
+    <text x="740" y="480" text-anchor="middle">2023</text>
+    <text x="940" y="480" text-anchor="middle">2024-25</text>
+    <text x="1180" y="480" text-anchor="middle">2026</text>
+  </g>
+
+  <!-- MILESTONE 1: Founding - April 2019 -->
+  <g transform="translate(140, 444)">
+    <!-- Connector line -->
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="url(#blueGradient)" stroke-width="3" stroke-dasharray="5,3"/>
+    <!-- Node -->
+    <circle cx="0" cy="0" r="16" fill="url(#blueGradient)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="8" fill="white"/>
+    <!-- Card -->
+    <rect x="-90" y="-230" width="180" height="100" rx="12" fill="rgba(102,126,234,0.2)" stroke="#667eea" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="-200" font-family="Arial, sans-serif" font-size="12" fill="#667eea" text-anchor="middle" font-weight="bold">APRIL 2019</text>
+    <text x="0" y="-175" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">FOUNDED</text>
+    <text x="0" y="-155" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">Alexandre Berriche &amp;</text>
+    <text x="0" y="-140" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">Sevan Marian launch Fleet</text>
+  </g>
+
+  <!-- MILESTONE 2: Product-Market Fit - Aug 2019 -->
+  <g transform="translate(260, 444)">
+    <!-- Connector line -->
+    <line x1="0" y1="0" x2="0" y2="120" stroke="url(#greenGradient)" stroke-width="3" stroke-dasharray="5,3"/>
+    <!-- Node -->
+    <circle cx="0" cy="0" r="16" fill="url(#greenGradient)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="8" fill="white"/>
+    <!-- Card -->
+    <rect x="-90" y="130" width="180" height="110" rx="12" fill="rgba(17,153,142,0.2)" stroke="#38ef7d" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="160" font-family="Arial, sans-serif" font-size="12" fill="#38ef7d" text-anchor="middle" font-weight="bold">MONTH 4</text>
+    <text x="0" y="185" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">€100K MRR</text>
+    <text x="0" y="205" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">Product-market fit</text>
+    <text x="0" y="220" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">Decision: Stay bootstrapped</text>
+  </g>
+
+  <!-- MILESTONE 3: COVID Growth - 2020 -->
+  <g transform="translate(380, 444)">
+    <!-- Connector line -->
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="url(#pinkGradient)" stroke-width="3" stroke-dasharray="5,3"/>
+    <!-- Node -->
+    <circle cx="0" cy="0" r="16" fill="url(#pinkGradient)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="8" fill="white"/>
+    <!-- Card -->
+    <rect x="-90" y="-230" width="180" height="100" rx="12" fill="rgba(238,9,121,0.2)" stroke="#ee0979" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="-200" font-family="Arial, sans-serif" font-size="12" fill="#ee0979" text-anchor="middle" font-weight="bold">2020</text>
+    <text x="0" y="-175" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">REMOTE BOOM</text>
+    <text x="0" y="-155" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">COVID accelerates demand</text>
+    <text x="0" y="-140" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">for distributed IT solutions</text>
+  </g>
+
+  <!-- MILESTONE 4: Spain Expansion - 2022 -->
+  <g transform="translate(500, 444)">
+    <!-- Connector line -->
+    <line x1="0" y1="0" x2="0" y2="120" stroke="url(#goldGradient)" stroke-width="3" stroke-dasharray="5,3"/>
+    <!-- Node -->
+    <circle cx="0" cy="0" r="16" fill="url(#goldGradient)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="8" fill="white"/>
+    <!-- Card -->
+    <rect x="-90" y="130" width="180" height="110" rx="12" fill="rgba(247,151,30,0.2)" stroke="#ffd200" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="160" font-family="Arial, sans-serif" font-size="12" fill="#ffd200" text-anchor="middle" font-weight="bold">2022</text>
+    <text x="0" y="185" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">SPAIN LAUNCH</text>
+    <text x="0" y="205" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">Barcelona becomes</text>
+    <text x="0" y="220" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">European operations hub</text>
+  </g>
+
+  <!-- MILESTONE 5: Germany & UK - 2023 -->
+  <g transform="translate(640, 444)">
+    <!-- Connector line -->
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="url(#cyanGradient)" stroke-width="3" stroke-dasharray="5,3"/>
+    <!-- Node -->
+    <circle cx="0" cy="0" r="16" fill="url(#cyanGradient)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="8" fill="white"/>
+    <!-- Card -->
+    <rect x="-90" y="-230" width="180" height="100" rx="12" fill="rgba(0,198,251,0.2)" stroke="#00c6fb" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="-200" font-family="Arial, sans-serif" font-size="12" fill="#00c6fb" text-anchor="middle" font-weight="bold">2023</text>
+    <text x="0" y="-175" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">EU EXPANSION</text>
+    <text x="0" y="-155" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">Germany &amp; UK launch</text>
+    <text x="0" y="-140" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">10,000+ devices deployed</text>
+  </g>
+
+  <!-- MILESTONE 6: 10M Revenue - 2023 -->
+  <g transform="translate(780, 444)">
+    <!-- Connector line -->
+    <line x1="0" y1="0" x2="0" y2="120" stroke="url(#blueGradient)" stroke-width="3" stroke-dasharray="5,3"/>
+    <!-- Node -->
+    <circle cx="0" cy="0" r="16" fill="url(#blueGradient)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="8" fill="white"/>
+    <!-- Card -->
+    <rect x="-90" y="130" width="180" height="110" rx="12" fill="rgba(102,126,234,0.2)" stroke="#764ba2" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="160" font-family="Arial, sans-serif" font-size="12" fill="#764ba2" text-anchor="middle" font-weight="bold">LATE 2023</text>
+    <text x="0" y="185" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">€10M+ REVENUE</text>
+    <text x="0" y="205" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">Double-digit millions</text>
+    <text x="0" y="220" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">Still fully bootstrapped</text>
+  </g>
+
+  <!-- MILESTONE 7: Leadership Transition - Jan 2025 -->
+  <g transform="translate(900, 444)">
+    <!-- Connector line -->
+    <line x1="0" y1="0" x2="0" y2="-120" stroke="url(#pinkGradient)" stroke-width="3" stroke-dasharray="5,3"/>
+    <!-- Node -->
+    <circle cx="0" cy="0" r="16" fill="url(#pinkGradient)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="8" fill="white"/>
+    <!-- Card -->
+    <rect x="-90" y="-230" width="180" height="100" rx="12" fill="rgba(238,9,121,0.2)" stroke="#ff6a00" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="-200" font-family="Arial, sans-serif" font-size="12" fill="#ff6a00" text-anchor="middle" font-weight="bold">JAN 2025</text>
+    <text x="0" y="-175" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">NEW CEO</text>
+    <text x="0" y="-155" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">Sevan Marian becomes CEO</text>
+    <text x="0" y="-140" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">Alex → Executive Chairman</text>
+  </g>
+
+  <!-- MILESTONE 8: US & Growth - 2025 -->
+  <g transform="translate(1020, 444)">
+    <!-- Connector line -->
+    <line x1="0" y1="0" x2="0" y2="120" stroke="url(#greenGradient)" stroke-width="3" stroke-dasharray="5,3"/>
+    <!-- Node -->
+    <circle cx="0" cy="0" r="16" fill="url(#greenGradient)" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="8" fill="white"/>
+    <!-- Card -->
+    <rect x="-90" y="130" width="180" height="125" rx="12" fill="rgba(17,153,142,0.2)" stroke="#38ef7d" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="160" font-family="Arial, sans-serif" font-size="12" fill="#38ef7d" text-anchor="middle" font-weight="bold">2025</text>
+    <text x="0" y="185" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">US LAUNCH</text>
+    <text x="0" y="205" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">€6M US revenue in 9 months</text>
+    <text x="0" y="220" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">92% YoY growth</text>
+    <text x="0" y="235" font-family="Arial, sans-serif" font-size="11" fill="#c0c0e0" text-anchor="middle">€30M+ annualized revenue</text>
+  </g>
+
+  <!-- MILESTONE 9: €100M Valuation - Feb 2026 -->
+  <g transform="translate(1180, 444)">
+    <!-- Connector line -->
+    <line x1="0" y1="0" x2="0" y2="-140" stroke="url(#goldGradient)" stroke-width="4" stroke-dasharray="5,3"/>
+    <!-- Node - larger for emphasis -->
+    <circle cx="0" cy="0" r="22" fill="url(#goldGradient)" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="10" fill="white"/>
+    <!-- Card - larger and highlighted -->
+    <rect x="-110" y="-280" width="220" height="130" rx="15" fill="rgba(247,151,30,0.25)" stroke="url(#goldGradient)" stroke-width="3" filter="url(#shadow)"/>
+    <text x="0" y="-245" font-family="Arial, sans-serif" font-size="14" fill="#ffd200" text-anchor="middle" font-weight="bold">FEBRUARY 2026</text>
+    <text x="0" y="-210" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">€100M</text>
+    <text x="0" y="-185" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">VALUATION</text>
+    <text x="0" y="-160" font-family="Arial, sans-serif" font-size="12" fill="#c0c0e0" text-anchor="middle">ISAI Expansion investment</text>
+    <text x="0" y="-145" font-family="Arial, sans-serif" font-size="11" fill="#ffd200" text-anchor="middle">First external capital ever</text>
+  </g>
+
+  <!-- Bottom Stats Bar -->
+  <rect x="100" y="720" width="1200" height="100" rx="15" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- Stat boxes -->
+  <g font-family="Arial, sans-serif">
+    <!-- Revenue Growth -->
+    <text x="220" y="760" font-size="32" font-weight="bold" fill="url(#greenGradient)" text-anchor="middle" filter="url(#softGlow)">92%</text>
+    <text x="220" y="785" font-size="12" fill="#a0a0c0" text-anchor="middle">YoY GROWTH 2025</text>
+
+    <!-- Team Size -->
+    <text x="420" y="760" font-size="32" font-weight="bold" fill="url(#cyanGradient)" text-anchor="middle" filter="url(#softGlow)">45</text>
+    <text x="420" y="785" font-size="12" fill="#a0a0c0" text-anchor="middle">EMPLOYEES</text>
+
+    <!-- Countries -->
+    <text x="620" y="760" font-size="32" font-weight="bold" fill="url(#pinkGradient)" text-anchor="middle" filter="url(#softGlow)">120+</text>
+    <text x="620" y="785" font-size="12" fill="#a0a0c0" text-anchor="middle">COUNTRIES SERVED</text>
+
+    <!-- Clients -->
+    <text x="820" y="760" font-size="32" font-weight="bold" fill="url(#blueGradient)" text-anchor="middle" filter="url(#softGlow)">2,000</text>
+    <text x="820" y="785" font-size="12" fill="#a0a0c0" text-anchor="middle">CLIENTS</text>
+
+    <!-- Revenue per Employee -->
+    <text x="1020" y="760" font-size="32" font-weight="bold" fill="url(#goldGradient)" text-anchor="middle" filter="url(#softGlow)">€750K</text>
+    <text x="1020" y="785" font-size="12" fill="#a0a0c0" text-anchor="middle">REVENUE/EMPLOYEE</text>
+
+    <!-- International -->
+    <text x="1200" y="760" font-size="32" font-weight="bold" fill="url(#greenGradient)" text-anchor="middle" filter="url(#softGlow)">67%</text>
+    <text x="1200" y="785" font-size="12" fill="#a0a0c0" text-anchor="middle">REVENUE INTL</text>
+  </g>
+
+  <!-- Key message -->
+  <rect x="400" y="835" width="600" height="40" rx="20" fill="rgba(247,151,30,0.15)" stroke="url(#goldGradient)" stroke-width="1"/>
+  <text x="700" y="860" font-family="Arial, sans-serif" font-size="14" fill="#ffd200" text-anchor="middle" font-weight="bold">7 YEARS • ZERO EXTERNAL FUNDING • €5,000 → €100M VALUATION</text>
+
+  <!-- Footer -->
+  <text x="700" y="895" font-family="Arial, sans-serif" font-size="11" fill="#606080" text-anchor="middle">fleet.co | Device-as-a-Service for SMEs with 5-500 employees</text>
+</svg>
