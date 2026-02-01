@@ -214,7 +214,7 @@
     <circle cx="0" cy="0" r="10" fill="white"/>
     <!-- Card - larger and highlighted -->
     <rect x="-110" y="-250" width="220" height="130" rx="15" fill="rgba(247,151,30,0.25)" stroke="url(#goldGradient)" stroke-width="3" filter="url(#shadow)"/>
-    <text x="0" y="-245" font-family="Arial, sans-serif" font-size="14" fill="#ffd200" text-anchor="middle" font-weight="bold">FEBRUARY 2026</text>
+    <text x="0" y="-240" font-family="Arial, sans-serif" font-size="14" fill="#ffd200" text-anchor="middle" font-weight="bold">FEBRUARY 2026</text>
     <text x="0" y="-210" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">€100M</text>
     <text x="0" y="-185" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">VALUATION</text>
     <text x="0" y="-160" font-family="Arial, sans-serif" font-size="12" fill="#c0c0e0" text-anchor="middle">ISAI Expansion investment</text>
